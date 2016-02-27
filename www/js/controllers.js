@@ -87,7 +87,7 @@ var users = new Firebase("https://chattemplate.firebaseio.com/");
 //Chats Page Controller
 hive.controller('chatCtrl',function($scope, $firebaseArray, $state, $timeout){
 	
-  var ref = new Firebase("https://1chattemplate.firebaseio.com/");
+  var ref = new Firebase("https://chattemplate.firebaseio.com/");
   var messageList = $('#chat-detail');
   var messagesRef = ref.child("messages");
   $scope.submitMessage = function(){
