@@ -7,7 +7,7 @@ hive.controller('MainCtrl', function() {
 
 //Totally functioning simple login
 hive.controller("LoginCtrl", function($scope, $firebaseAuth, $state){
-var users = new Firebase("https://10minute.firebaseio.com/");
+var users = new Firebase("https://chattemplate.firebaseio.com/");
 
   $scope.register = function(username, password){
     users.createUser({
@@ -87,7 +87,7 @@ var users = new Firebase("https://10minute.firebaseio.com/");
 //Chats Page Controller
 hive.controller('chatCtrl',function($scope, $firebaseArray, $state, $timeout){
 	
-  var ref = new Firebase("https://10minute.firebaseio.com/");
+  var ref = new Firebase("https://1chattemplate.firebaseio.com/");
   var messageList = $('#chat-detail');
   var messagesRef = ref.child("messages");
   $scope.submitMessage = function(){
@@ -109,7 +109,7 @@ hive.controller('chatCtrl',function($scope, $firebaseArray, $state, $timeout){
       $scope.reset();
 	};
   
-  var ratesRef = new Firebase('https://10minute.firebaseio.com/messages');
+  var ratesRef = new Firebase('https://chattemplate.firebaseio.com/messages');
   
   ratesRef.on("value", function (snapshot) {
     $timeout(function () {
