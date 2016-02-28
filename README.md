@@ -64,7 +64,7 @@ The file structure goes as follows:</p>
 					<li>controller.js</li>
 					<li>directives.js</li>
 					<li>services.js</li>
-				<ul>
+				</ul>
 				
 			<li>lib</li>
 				<ul>
