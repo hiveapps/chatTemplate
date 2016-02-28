@@ -50,10 +50,37 @@ The file structure goes as follows:</p>
 	<li>www</li>
 		<ul>
 			<li>css</li>
+				<ul>
+					<li>style.css</li>
+				</ul>
+				
 			<li>img</li>
+			
 			<li>js</li>
+				<ul>
+					<li>angular-ui-router.min.js</li>
+					<li>angular.min.js</li>
+					<li>app.js</li>
+					<li>controller.js</li>
+					<li>directives.js</li>
+					<li>services.js</li>
+				<ul>
+				
 			<li>lib</li>
+				<ul>
+					<li>hive</li>
+						<ul>
+							<li>hive.css</li>
+						</ul>
+				</ul>
+				
 			<li>templates</li>
+				<ul>
+					<li>chat.html</li>
+					<li>header.html</li>
+					<li>login.html</li>
+				</ul>
+				
 			<li>config.xml</li>
 			<li>index.html</li>
 		</ul>
