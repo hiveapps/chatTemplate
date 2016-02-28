@@ -8,8 +8,14 @@ with a custom factory and controllers.</p>
 <h2>Features</h2>
 <ul>
 	<li>
-		The Hive Chat Template utilizes AngularJS and Angular UI-Router
+		The Hive Chat Template utilizes many awesome features, including:
 	</li>
+	<ul>
+		<li>
+			AngularJS and Angular UI-Router
+		</li>
+	</ul>
+</ul>
  
 <h2>Root File Structure</h2>
 <p>This template has a specific root file structure to allow you to be able quickly and easily begin building out your app.
