@@ -14,6 +14,18 @@ with a custom factory and controllers.</p>
 		<li>
 			AngularJS and Angular UI-Router
 		</li>
+		<li>
+			Firebase and Angular Fire
+		</li>
+		<li>
+			Firebase Simple Login
+		</li>
+		<li>
+			Fully functioning and simple chat service with firebase integration
+		</li>
+		<li>
+			Resources file structure to easily compile an app icon and splashscreen once Phonegap builds the app
+		</li>
 	</ul>
 </ul>
  
