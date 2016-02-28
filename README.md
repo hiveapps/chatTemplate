@@ -5,6 +5,7 @@ with a custom factory and controllers.</p>
 
 <br><br>
  
+<h2>Root File Structure</h2>
 <p>This template has a specific root file structure to allow you to be able quickly and easily begin building out your app.
 The root structure goes as follows:<br>
 -resources<br>
@@ -15,3 +16,7 @@ The root structure goes as follows:<br>
 -config.xml<br>
 -README.md<br>
 </p>
+
+<br><br>
+
+<h2>Resources Folder</h2>
