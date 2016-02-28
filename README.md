@@ -93,4 +93,8 @@ The file structure goes as follows:</p>
 
 <br><br>
 
-<h2>Resources Folder</h2>
+<h2>How It Works</h2>
+
+<p>The Hive Chat Template is very simple from the user perspective but from a developer perspective we believe it gets you started
+in a great way. By integrating AngularJS with Angular UI-Router and linking all of the apps backend functionality to your own firebase
+database, we believe that this will prove to be a great starting point for you to build out your app.</p>
