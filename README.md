@@ -97,4 +97,9 @@ The file structure goes as follows:</p>
 
 <p>The Hive Chat Template is very simple from the user perspective but from a developer perspective we believe it gets you started
 in a great way. By integrating AngularJS with Angular UI-Router and linking all of the apps backend functionality to your own firebase
-database, we believe that this will prove to be a great starting point for you to build out your app.</p>
+database, we believe that this will prove to be a great starting point for you to build out your own app.</p>
+
+<ul>
+	<li>The Angular UI-Router is at the heart of this app template and allows for you to provide navigation via state changes. This
+	allows for a seamless transition of pages. To learn more about how Angular UI-Router works <a href="https://github.com/angular-ui/ui-router" target="_blank">click here</a></li>
+</ul>
