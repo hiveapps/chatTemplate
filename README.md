@@ -102,7 +102,31 @@ database, we believe that this will prove to be a great starting point for you t
 <ul>
 	<li>Angular UI-Router is at the heart of this app template and allows for you to provide navigation via state changes which
 	allows for a seamless transition of pages. To learn more about how Angular UI-Router works <a href="https://github.com/angular-ui/ui-router" target="_blank">click here</a></li>
-		<ul><p>Heres How UI-Router Works In The Template</p>
-			<li>test</li>
+		<ul>
+			<li>Heres How UI-Router Works In This Template</li>
+				<ul>
+					<li>First we add the files angular.min.js and angular-ui-router.min.js into www/js, then both of these files are called in the index.html file</li>
+					
+					<li>Second we build out the <body> of the app which includes a <header>, <main>, and <footer>. However, 
+					In this app we are only utilizing the <header> and <main> but you can add in your own <footer> by building
+					a footer.html page and adding it into the abstract state which will be mentioned in a minute. Also notice
+					that each tag within the body has a specific "ui-view" assigned to it, these will be called in the app config.</li>
+					
+					<li>Third we build out the config which is a function to set each page state. Each state is assigned a specific html page
+					and there is one abstract state which sets the header (and the footer if you configure one). Notice how we
+					named the abstract state "hive" and there is a "header" view which sets the template for the header by assigning
+					a html page to the view.</li>
+					
+					<li>Moving on in the config you will notice that all the 'normal' state names (states that aren't abstract states) start with 
+					"hive." this is declaring that the state is going to use the abstract state named "hive" that has 
+					been set.</li>
+					
+					<li>We also set the view of the 'normal' states to be "content@" it is important to include the "@" symbol otherwise the 
+					template that is assigned to that state will not appear. Take note that back in the index.html file we assigned "ui-view = 'content'"
+					to the <main> tag but did not include the "@" symbol in the ui-view.</li>
+					
+					<li>Lastly we call "$urlRouterProvider.otherwise("/");" to set the default page that the app will open to</li>
+					 
+				</ul>
 		</ul>
 </ul>
