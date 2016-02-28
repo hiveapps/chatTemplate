@@ -100,6 +100,9 @@ in a great way. By integrating AngularJS with Angular UI-Router and linking all 
 database, we believe that this will prove to be a great starting point for you to build out your own app.</p>
 
 <ul>
-	<li>The Angular UI-Router is at the heart of this app template and allows for you to provide navigation via state changes. This
+	<li>Angular UI-Router is at the heart of this app template and allows for you to provide navigation via state changes which
 	allows for a seamless transition of pages. To learn more about how Angular UI-Router works <a href="https://github.com/angular-ui/ui-router" target="_blank">click here</a></li>
+		<ul><p>Heres How UI-Router Works In The Template</p>
+			<li>test</li>
+		</ul>
 </ul>
