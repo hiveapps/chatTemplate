@@ -29,16 +29,39 @@ with a custom factory and controllers.</p>
 	</ul>
 </ul>
  
-<h2>Root File Structure</h2>
-<p>This template has a specific root file structure to allow you to be able quickly and easily begin building out your app.
-The root structure goes as follows:<br>
--resources<br>
--scss<br>
--www<br>
--.editorconfig<br>
--.gitignore<br>
--config.xml<br>
--README.md<br>
+<h2>File Structure</h2>
+<p>This template has a specific file structure to allow you to be able quickly and easily begin building out your app.
+The file structure goes as follows:<br>
+<ul>
+	<li>resources</li>
+		<ul>
+			<li>android</li>
+			<li>ios</li>
+			<li>icon.png</li>
+			<li>splash.png</li>
+		</ul>
+		
+	<li>scss</li>
+		<ul>
+			<li>_custom.scss</li>
+		</ul>
+		
+	<li>www</li>
+		<ul>
+			<li>css</li>
+			<li>img</li>
+			<li>js</li>
+			<li>lib</li>
+			<li>templates</li>
+			<li>config.xml</li>
+			<li>index.html</li>
+		</ul>
+		
+	<li>.editorconfig</li>
+	<li>.gitignore</li>
+	<li>config.xml</li>
+	<li>README.md</li>
+<ul>
 </p>
 
 <br><br>
