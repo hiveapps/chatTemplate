@@ -31,7 +31,7 @@ with a custom factory and controllers.</p>
  
 <h2>File Structure</h2>
 <p>This template has a specific file structure to allow you to be able quickly and easily begin building out your app.
-The file structure goes as follows:<br>
+The file structure goes as follows:</p><br>
 <ul>
 	<li>resources</li>
 		<ul>
@@ -61,8 +61,7 @@ The file structure goes as follows:<br>
 	<li>.gitignore</li>
 	<li>config.xml</li>
 	<li>README.md</li>
-<ul>
-</p>
+</ul>
 
 <br><br>
 
