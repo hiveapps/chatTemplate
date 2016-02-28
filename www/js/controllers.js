@@ -76,6 +76,18 @@ var users = new Firebase("https://chattemplate.firebaseio.com/");
     users.unauth();
     $state.go('hive.login');
   };
+  
+  
+  //This is going to get and log the user status
+  var status = new Firebase("https://chattemplate.firebaseio.com/");
+  var authData = status.getAuth();
+  
+  if (authData) {
+    console.log("User " + authData.uid + " is logged in with " + authData.provider);
+  } else {
+    console.log("User is logged out");
+  }
+  
 });
 
 
