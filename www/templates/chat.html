@@ -1,29 +1,19 @@
-<header style="margin-bottom: 75px;">
-	<nav class="navbar navbar-default navbar-fixed-top" style="border-radius: 0px;">
-		<div>
-			<a ui-sref="#" class="navbar-brand">Hive</a>
-		</div>
-	</nav>
-</header>
-
-<div id='chat-detail' ng-controller="chatCtrl" style="margin-bottom: 25%; padding: 3%;">
+<div class="chatWrapper" ng-controller="chatCtrl">
 	
-	<div class="card text-xs-center" ng-repeat="val in messages" style="border: 1px solid grey; border-radius: 5px; margin-bottom: 3%;">
-		<div class="card-block" style="padding: 1%; min-height: 100px;">
+	<div class="card text-xs-center" ng-repeat="val in messages">
+		<div class="card-block">
 			<p class="card-text">{{val.messageDescription}}</p>
 		</div>
 	</div>
 	
-	
-	<footer>
-		<div class="navbar navbar-default navbar-fixed-bottom" style="width: 100%; text-align: center; padding-top: 1%;">
-			<input placeholder="Send Message..." ng-model="messageDescription" style="width: 75%;" />
-	
-			<button type="button" class="btn btn-primary" ng-model="sendMessageButton" ng-disabled="!messageDescription" ng-click="submitMessage(); reset()">
-				Send
-			</button>
-		</div>
-	</footer>
-	
-	
 </div>
+
+<footer class="chatFooter" ng-controller="chatCtrl">
+	<div class="navbar navbar-default navbar-fixed-bottom">
+		<input placeholder="Send Message..." ng-model="messageDescription" />
+
+		<button type="button" class="btn btn-primary" ng-model="sendMessageButton" ng-disabled="!messageDescription" ng-click="submitMessage(); reset()">
+			Send
+		</button>
+	</div>
+</footer>

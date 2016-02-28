@@ -1,0 +1,57 @@
+/* This page contains some simple CSS for the styling 
+within the template */
+
+/* Header Styling */
+.abstractHeader {
+	border-radius: 0px;
+}
+/* End of Header Styling */
+
+/* Beginning of Login Page Styling - 
+Login Page Wrapper Styling */
+.loginWrapper {
+	text-align: center;
+}
+
+/* List styling for login input */
+.loginWrapper .list {
+	margin-bottom: 5%;
+}
+
+/* Login Page Input Styling */
+.loginWrapper .list input {
+	width: 90%; 
+	margin-bottom: 3%;
+}
+/* End of Login Page Styling */
+
+
+/* Beginning of Chat Page Styling - 
+Chat Page Wrapper*/
+.chatWrapper {
+	margin-bottom: 25%;
+	padding: 3%;
+}
+
+/* Card styling */
+.chatWrapper .card {
+	border: 1px solid grey;
+	border-radius: 5px;
+	margin-bottom: 3%;
+}
+.chatWrapper .card .card-block {
+	padding: 1%;
+	min-height: 100px;
+}
+
+/* Chat Page Footer/Send Message Input Styling */
+.chatFooter .navbar {
+	width: 100%;
+	text-align: center;
+	padding-top: 1%;
+}
+.chatFooter .navbar input {
+	width: 75%;
+}
+/* End of Chat Page Styling */
+

@@ -1,9 +1,5 @@
 var hive = angular.module('hive.controllers', []);
 
-// Code goes here
-hive.controller('MainCtrl', function() {
-
-});
 
 //Totally functioning simple login
 hive.controller("LoginCtrl", function($scope, $firebaseAuth, $state){
@@ -17,10 +13,21 @@ var users = new Firebase("https://chattemplate.firebaseio.com/");
       if (error) {
         console.log("Error creating user:", error);
       } else {
-        $state.go('chat');
+        users.authWithPassword({
+          email: username,
+          password: password
+        }, function(error, authData) {
+          if (error) {
+            console.log("Login Failed!", error);
+          } else {
+            console.log("Authenticated successfully with payload:", authData);
+          }
+        });
+        $state.go('hive.chat');
       }
     });
   }
+  
   $scope.login = function(username, password){
     users.authWithPassword({
       email    : username,
@@ -29,19 +36,25 @@ var users = new Firebase("https://chattemplate.firebaseio.com/");
       if (error) {
         console.log("Login Failed!", error);
       } else {
-        $state.go('chat');
+        $state.go('hive.chat');
       }
     });
   }
+  
+  
+  // we would probably save a profile when we register new users on our site
+  // we could also read the profile to see if it's null
+  // here we will just simulate this with an isNewUser boolean
   var isNewUser = true;
   
-  users.onAuth(function(authData) {
+  var ref = new Firebase("https://chattemplate.firebaseio.com");
+  ref.onAuth(function(authData) {
     if (authData && isNewUser) {
       // save the user's profile into the database so we can list users,
       // use them in Security and Firebase Rules, and show profiles
-      users.child("users").child(authData.uid).set({
+      ref.child("users").child(authData.uid).set({
         provider: authData.provider,
-        email: getName(authData)
+        name: getName(authData)
       });
     }
   });
@@ -50,45 +63,27 @@ var users = new Firebase("https://chattemplate.firebaseio.com/");
   function getName(authData) {
     switch(authData.provider) {
       case 'password':
-        return authData.password.email;
-      /*case 'twitter':
+        return authData.password.email.replace(/@.*/, '');
+      case 'twitter':
         return authData.twitter.displayName;
       case 'facebook':
-        return authData.facebook.displayName;*/
+        return authData.facebook.displayName;
     }
   }
-  
-  //Reset password functionality
-  //$scope.resetPass = function(username){
-  //  users.resetPassword({
-  //    email: username
-  //  }, function(error) {
-  //    if (error) {
-  //      switch (error.code) {
-  //        case "INVALID_USER":
-  //          console.log("The specified user account does not exist.");
-  //          break;
-  //        default:
-  //          console.log("Error resetting password:", error);
-  //      }
-  //    } else {
-  //      console.log("Password reset email sent successfully!");
-  //    }
-  //  });
-  //};
   
   //Logout Functionality
   $scope.logout = function() {
     users.unauth();
-    $state.go('login');
+    $state.go('hive.login');
   };
 });
+
+
 
 //Chats Page Controller
 hive.controller('chatCtrl',function($scope, $firebaseArray, $state, $timeout){
 	
   var ref = new Firebase("https://chattemplate.firebaseio.com/");
-  var messageList = $('#chat-detail');
   var messagesRef = ref.child("messages");
   $scope.submitMessage = function(){
 
@@ -122,6 +117,4 @@ hive.controller('chatCtrl',function($scope, $firebaseArray, $state, $timeout){
     $scope.messages = snapshot.val();
   }
   
-  //SCROLL TO BOTTOM OF MESSAGE LIST
-    messageList[0].scrollTop = messageList[0].scrollHeight;
 });
