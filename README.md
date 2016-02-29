@@ -3,6 +3,13 @@
 <p>The Hive Chat Template is built to provide a very basic chat service that integrates firebase login and a messaging service 
 with a custom factory and controllers.</p>
 
+<ul>
+	<li>Click on any of the below links to navigate to the selected section:</li>
+		<ul>
+			<li><a href="#features">Features</a></li>
+		</ul>
+</ul>
+
 <br>
 
 <h2>Features</h2>
