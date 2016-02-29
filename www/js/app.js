@@ -1,4 +1,4 @@
-var hive = angular.module('hive', ['ui.router', 'hive.controllers', 'hive.services', 'hive.directives', 'firebase'])
+var hive = angular.module('hive', ['ui.router', 'hive.controllers', 'hive.services', 'hive.directives', 'firebase']);
 
 hive.config(function($stateProvider, $urlRouterProvider) {
       
@@ -28,7 +28,7 @@ hive.config(function($stateProvider, $urlRouterProvider) {
                 templateUrl: 'templates/chat.html'
             }
         }
-    })
+    });
 
     
     $urlRouterProvider.otherwise("/");

@@ -10,7 +10,7 @@ var users = new Firebase("https://chattemplate.firebaseio.com/");
     users.createUser({
       email    : username,
       password : password
-    }, function(error, userData) {
+    }, function(error) {
       if (error) {
         console.log("Error creating user:", error);
       } else {
@@ -27,21 +27,21 @@ var users = new Firebase("https://chattemplate.firebaseio.com/");
         $state.go('hive.chat');
       }
     });
-  }
+  };
   
   //This is called when a user clicks the 'Login' button
   $scope.login = function(username, password){
     users.authWithPassword({
       email    : username,
       password : password
-    }, function(error, authData) {
+    }, function(error) {
       if (error) {
         console.log("Login Failed!", error);
       } else {
         $state.go('hive.chat');
       }
     });
-  }
+  };
   
   
   // we would probably save a profile when we register new users on our app
