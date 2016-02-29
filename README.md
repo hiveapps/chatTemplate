@@ -133,6 +133,7 @@ database, we believe that this will prove to be a great starting point for you t
 		</ul>
 		
 		<ul>
+			<br>
 			<li>How The 'www' Folder Structure Is Setup</li>
 			
 				<ul>
