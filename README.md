@@ -1,6 +1,6 @@
 <h1><b>Hive Chat Template</b></h1>
 
-<p>The Hive Chat Template is built to provide a very basic chat service that integrates firebase simple login and a messaging service 
+<p>The Hive Chat Template is built to provide a very basic chat service that integrates firebase login and a messaging service 
 with a custom factory and controllers.</p>
 
 <br><br>
@@ -18,7 +18,7 @@ with a custom factory and controllers.</p>
 			Firebase and Angular Fire
 		</li>
 		<li>
-			Firebase Simple Login
+			Firebase Login
 		</li>
 		<li>
 			Fully functioning and simple chat service with firebase integration
@@ -107,7 +107,7 @@ database, we believe that this will prove to be a great starting point for you t
 			<br>
 			<li>How UI-Router Works In This Template</li>
 				<ul>
-					<li>First we add the files angular.min.js and angular-ui-router.min.js into www/js, then both of these files are called in the index.html file</li>
+					<li>First we add the files angular.min.js and angular-ui-router.min.js into www/js, then both of these files are called in the index.html file.</li>
 					
 					<li>Second we build out the <code>body</code> of the app which includes a <code>header</code>, <code>main</code>, and <code>footer</code>. However, 
 					In this app we are only utilizing the <code>header</code> and <code>main</code> but you can add in your own <code>footer</code> by building
@@ -127,7 +127,7 @@ database, we believe that this will prove to be a great starting point for you t
 					template that is assigned to that state will not appear. Take note that back in the index.html file we assigned "ui-view = 'content'"
 					to the <code>main</code> tag but did not include the "@" symbol in the ui-view.</li>
 					
-					<li>Lastly we call "$urlRouterProvider.otherwise("/");" to set the default page that the app will open to</li>
+					<li>Lastly we call "$urlRouterProvider.otherwise("/");" to set the default page that the app will open to.</li>
 					 
 				</ul>
 		</ul>
@@ -155,12 +155,40 @@ database, we believe that this will prove to be a great starting point for you t
 							
 							<li>js</li>
 								<ul>
+									
 									<li>angular-ui-router.min.js</li>
+										<ul>
+											<li>This file was copied from the angular ui-router install, we copied it into the 'js' folder
+											since we are telling git to ignore the node_modules folder to save on file size.</li>
+										</ul>
+									
 									<li>angular.min.js</li>
+										<ul>
+											<li>This file was copied from the angular ui-router install as well.</li>
+										</ul>
+									
 									<li>app.js</li>
+										<ul>
+											<li>Within the app.js file we link in the controllers and services files, this is also where
+											the ui-router state configurating is.</li>
+										</ul>
+									
 									<li>controllers.js</li>
+										<ul>
+											<li>Within the controllers.js file we have a controller for the firebase login as well as a controller for
+											the chat service.</li>
+										</ul>
+									
 									<li>directives.js</li>
+										<ul>
+											<li>This file is empty but this is where you can write your own directives for your app.</li>
+										</ul>
+									
 									<li>services.js</li>
+										<ul>
+											<li>The services.js file contains the factory for the 'messageService'. This file is where you can
+											write any other factorys that you may need for your app.</li>
+										</ul>
 								</ul>
 							
 							<li>lib</li>
@@ -169,20 +197,47 @@ database, we believe that this will prove to be a great starting point for you t
 										<ul>
 											<li>hive.css</li>
 												<ul>
-													<li>This file contains the styling that is used for the prebuilt template</li>
+													<li>This file contains the styling that is used for the prebuilt template.</li>
 												</ul>
 										</ul>
 								</ul>
 							
 							<li>templates</li>
 								<ul>
+									
 									<li>chat.html</li>
+										<ul>
+											<li>The chat.html file is where we have setup all the html for the 'chat' page, this page integrates
+											AngularJS to display each new message and utilizes to the chatCtrl.</li>
+										</ul>
+									
 									<li>header.html</li>
+										<ul>
+											<li>The header.html file is where the header for the app is located, we have setup a very simple
+											header for you, you can modify this as much, or as little, as you find necessary.</li>
+										</ul>
+										
 									<li>login.html</li>
+										<ul>
+											<li>The login.html file contains the code for the simple login page that we have built for you.
+											This page also utilizes the LoginCtrl.</li>
+										</ul>
 								</ul>
 							
 							<li>config.xml</li>
+								<ul>
+									<li>The config.xml is utilized by PhoneGap for many different reasons, it states the version, title, author, and
+									much more. One of the key features that this config.xml file does is compile the resources folder to create the app
+									icon and the app splashscreen.</li>
+								</ul>
 							<li>index.html</li>
+								<ul>
+									<li>The index.html file, like all other apps/websites is one of the most important files in the
+									entire application. This file brings in Bootstrap, JavaScript, jQuery, Firebase & AngularFire along with
+									AngularJS and Angular UI-Router. This file also contains the <code>body</code> of the app which contains
+									the 'ui-view' for the <code>header</code>, <code>main</code>, and <code>footer</code> (even though the footer
+									isn't fully configured in this app, we still included it in the index.html file for you).</li>
+								</ul>
 						</ul>
 				</ul>
 		</ul>
