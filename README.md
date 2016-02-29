@@ -21,7 +21,7 @@ with a custom factory and controllers.</p>
 			Firebase Login
 		</li>
 		<li>
-			Fully functioning and simple chat service with firebase integration
+			Fully functioning simple chat service with firebase integration
 		</li>
 		<li>
 			Resources file structure to easily compile an app icon and splashscreen once Phonegap builds the app
@@ -282,4 +282,49 @@ need.</p>
 				<li>The README.md file is what you are reading right now! :)</li>
 			</ul>
 	</ul>
+</ul>
+
+<br><br>
+
+<h2>Understanding The Resources Folder</h2>
+
+<p>There are two folders and two files within the 'Resources' folder. The folders are 'android' and 'ios' and the files are 'icon.png'
+and 'splash.png'. To update either the icon.png or splash.png files you need to drop in a new file and name it icon.png or splash.png 
+depending on which of the two you are updating. The icon image’s minimum dimensions should be 192 x 192 px and should have no rounded corners.
+Splash screen dimensions vary for each platform, device, and orientation, so a square source image is required to generate each of the various screen sizes. 
+The source image’s minimum dimensions should be 2208 x 2208 px, and the artwork should be centered within the square, because each generated image will 
+be center cropped into landscape and portrait images. The splash screen’s artwork should roughly fit within a center square 1200 x 1200 px.
+The sizes for both platforms are as follows:</p>
+
+<ul>
+	<li>android icon sizes:</li>
+		<ul>
+			<li>36 x 36 (ldpi)</li>
+			<li>48 × 48 (mdpi)</li>
+			<li>72 × 72 (hdpi)</li>
+			<li>96 × 96 (xhdpi)</li>
+			<li>144 × 144 (xxhdpi)</li>
+			<li>192 × 192 (xxxhdpi)</li>
+		</ul>
+	
+	<li>ios icon sizes:</li>
+		<ul>
+			<li>57 x 57 (icon.png)</li>
+			<li>114 x 114 (icon@2x.png)</li>
+			<li>40 x 40 (icon-40.png)</li>
+			<li>80 x 80 (icon-40@2x.png)</li>
+			<li>50 x 50 (icon-50.png)</li>
+			<li>100 x 100 (icon-50@2x.png)</li>
+			<li>60 x 60 (icon-60.png)</li>
+			<li>120 x 120 (icon-60@2x.png)</li>
+			<li>180 x 180 (icon-60@3x.png)</li>
+			<li>72 x 72 (icon-72.png)</li>
+			<li>144 x 144 (icon-72@2x.png)</li>
+			<li>76 x 76 (icon-76.png)</li>
+			<li>152 x 152 (icon-76@2x.png)</li>
+			<li>29 x 29 (icon-small.png)</li>
+			<li>58 x 58 (icon-small@2x.png)</li>
+			<li>87 x 87 (icon-small@3x.png)</li>
+		</ul>
+
 </ul>
