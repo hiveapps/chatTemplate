@@ -107,8 +107,8 @@ database, we believe that this will prove to be a great starting point for you t
 				<ul>
 					<li>First we add the files angular.min.js and angular-ui-router.min.js into www/js, then both of these files are called in the index.html file</li>
 					
-					<li>Second we build out the <code>body</code> of the app which includes a header tag, main tag, and footer tag. However, 
-					In this app we are only utilizing the <header> and <main> but you can add in your own <footer> by building
+					<li>Second we build out the <code>body</code> of the app which includes a <code>header</code>, <code>main</code>, and <code>footer</code>. However, 
+					In this app we are only utilizing the <code>header</code> and <code>main</code> but you can add in your own <code>footer</code> by building
 					a footer.html page and adding it into the abstract state which will be mentioned in a minute. Also notice
 					that each tag within the body has a specific "ui-view" assigned to it, these will be called in the app config.</li>
 					
@@ -123,7 +123,7 @@ database, we believe that this will prove to be a great starting point for you t
 					
 					<li>We also set the view of the 'normal' states to be "content@" it is important to include the "@" symbol otherwise the 
 					template that is assigned to that state will not appear. Take note that back in the index.html file we assigned "ui-view = 'content'"
-					to the <main> tag but did not include the "@" symbol in the ui-view.</li>
+					to the <code>main</code> tag but did not include the "@" symbol in the ui-view.</li>
 					
 					<li>Lastly we call "$urlRouterProvider.otherwise("/");" to set the default page that the app will open to</li>
 					 
