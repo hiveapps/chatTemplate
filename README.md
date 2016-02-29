@@ -328,3 +328,6 @@ The sizes for both platforms are as follows:</p>
 		</ul>
 
 </ul>
+
+<p><b>NOTE:</b> Each of the files within each platform folder should be kept up to date with the most current icon images and
+each file needs to be in line with the dimensions stated above.</p>
