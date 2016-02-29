@@ -4,7 +4,19 @@ var hive = angular.module('hive.controllers', []);
 //Totally functioning simple login
 hive.controller("LoginCtrl", function($scope, $firebaseAuth, $state){
 var users = new Firebase("https://chattemplate.firebaseio.com/");
-
+  
+  //This is going to get and log the user status, this could be copied and/or used for the beginning framework to build
+  //a functioning profile page
+  var status = new Firebase("https://chattemplate.firebaseio.com/");
+  var authData = status.getAuth();
+  
+  if (authData) {
+    console.log("User " + authData.uid + " is logged in with " + authData.provider);
+    $state.go('hive.chat');
+  } else {
+    console.log("User is logged out");
+  }
+  
   //This is called when a user clicks the 'Sign Up' button
   $scope.register = function(username, password){
     users.createUser({
@@ -78,19 +90,7 @@ var users = new Firebase("https://chattemplate.firebaseio.com/");
     users.unauth();
     $state.go('hive.login');
   };
-  
-  
-  //This is going to get and log the user status, this could be copied and/or used for the beginning framework to build
-  //a functioning profile page
-  var status = new Firebase("https://chattemplate.firebaseio.com/");
-  var authData = status.getAuth();
-  
-  if (authData) {
-    console.log("User " + authData.uid + " is logged in with " + authData.provider);
-  } else {
-    console.log("User is logged out");
-  }
-  
+
 });
 
 
