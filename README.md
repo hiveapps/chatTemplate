@@ -107,7 +107,7 @@ database, we believe that this will prove to be a great starting point for you t
 				<ul>
 					<li>First we add the files angular.min.js and angular-ui-router.min.js into www/js, then both of these files are called in the index.html file</li>
 					
-					<li>Second we build out the <body> of the app which includes a <header>, <main>, and <footer>. However, 
+					<li>Second we build out the <code><body></code> of the app which includes a header tag, main tag, and footer tag. However, 
 					In this app we are only utilizing the <header> and <main> but you can add in your own <footer> by building
 					a footer.html page and adding it into the abstract state which will be mentioned in a minute. Also notice
 					that each tag within the body has a specific "ui-view" assigned to it, these will be called in the app config.</li>
