@@ -102,8 +102,10 @@ database, we believe that this will prove to be a great starting point for you t
 <ul>
 	<li>Angular UI-Router is at the heart of this app template and allows for you to provide navigation via state changes which
 	allows for a seamless transition of pages. To learn more about how Angular UI-Router works <a href="https://github.com/angular-ui/ui-router" target="_blank">click here</a></li>
+		
 		<ul>
-			<li>Heres How UI-Router Works In This Template</li>
+			<br>
+			<li>How UI-Router Works In This Template</li>
 				<ul>
 					<li>First we add the files angular.min.js and angular-ui-router.min.js into www/js, then both of these files are called in the index.html file</li>
 					
@@ -127,6 +129,60 @@ database, we believe that this will prove to be a great starting point for you t
 					
 					<li>Lastly we call "$urlRouterProvider.otherwise("/");" to set the default page that the app will open to</li>
 					 
+				</ul>
+		</ul>
+		
+		<ul>
+			<li>How The 'www' Folder Structure Is Setup</li>
+			
+				<ul>
+					<li>Within the www folder there are 5 subfolders and 2 files. Those folders and files are:</li>
+						<ul>
+							
+							<li>css</li>
+								<ul>
+									<li>style.css</li>
+										<ul>
+											<li>This file is for you to add your own CSS Styling to the app.</li>
+										</ul>
+								</ul>
+							
+							<li>img</li>
+								<ul>
+									<li>This folder is where you can place your own images for your app.</li>
+								</ul>
+							
+							<li>js</li>
+								<ul>
+									<li>angular-ui-router.min.js</li>
+									<li>angular.min.js</li>
+									<li>app.js</li>
+									<li>controllers.js</li>
+									<li>directives.js</li>
+									<li>services.js</li>
+								</ul>
+							
+							<li>lib</li>
+								<ul>
+									<li>hive</li>
+										<ul>
+											<li>hive.css</li>
+												<ul>
+													<li>This file contains the styling that is used for the prebuilt template</li>
+												</ul>
+										</ul>
+								</ul>
+							
+							<li>templates</li>
+								<ul>
+									<li>chat.html</li>
+									<li>header.html</li>
+									<li>login.html</li>
+								</ul>
+							
+							<li>config.xml</li>
+							<li>index.html</li>
+						</ul>
 				</ul>
 		</ul>
 </ul>
