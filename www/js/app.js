@@ -1,11 +1,5 @@
 var hive = angular.module('hive', ['ui.router', 'hive.controllers', 'hive.services', 'hive.directives', 'firebase'])
 
-/* DOESNT WORK YET hive.run(['$window', '$rootScope', function ($window , $rootScope) {
-  $rootScope.goBack = function(){
-    $window.history.back();
-  }
-}]);*/
-
 hive.config(function($stateProvider, $urlRouterProvider) {
       
   $stateProvider

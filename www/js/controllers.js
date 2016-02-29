@@ -5,6 +5,7 @@ var hive = angular.module('hive.controllers', []);
 hive.controller("LoginCtrl", function($scope, $firebaseAuth, $state){
 var users = new Firebase("https://chattemplate.firebaseio.com/");
 
+  //This is called when a user clicks the 'Sign Up' button
   $scope.register = function(username, password){
     users.createUser({
       email    : username,
@@ -28,6 +29,7 @@ var users = new Firebase("https://chattemplate.firebaseio.com/");
     });
   }
   
+  //This is called when a user clicks the 'Login' button
   $scope.login = function(username, password){
     users.authWithPassword({
       email    : username,
@@ -42,7 +44,7 @@ var users = new Firebase("https://chattemplate.firebaseio.com/");
   }
   
   
-  // we would probably save a profile when we register new users on our site
+  // we would probably save a profile when we register new users on our app
   // we could also read the profile to see if it's null
   // here we will just simulate this with an isNewUser boolean
   var isNewUser = true;
@@ -78,7 +80,8 @@ var users = new Firebase("https://chattemplate.firebaseio.com/");
   };
   
   
-  //This is going to get and log the user status
+  //This is going to get and log the user status, this could be copied and/or used for the beginning framework to build
+  //a functioning profile page
   var status = new Firebase("https://chattemplate.firebaseio.com/");
   var authData = status.getAuth();
   
@@ -97,6 +100,8 @@ hive.controller('chatCtrl',function($scope, $firebaseArray, $state, $timeout){
 	
   var ref = new Firebase("https://chattemplate.firebaseio.com/");
   var messagesRef = ref.child("messages");
+  
+  //This is called after the 'Send' button is pressed
   $scope.submitMessage = function(){
 
       var newMessageRef = messagesRef.push();
@@ -105,8 +110,6 @@ hive.controller('chatCtrl',function($scope, $firebaseArray, $state, $timeout){
       });
     
     //This resets the form to master which is null
-    //Still need to apply some time of form reset
-    //to the "Cancel" button, needs troubleshooting.
     $scope.master= null;
     
       $scope.reset = function() {
