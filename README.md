@@ -242,3 +242,12 @@ database, we believe that this will prove to be a great starting point for you t
 				</ul>
 		</ul>
 </ul>
+
+<br><br>
+
+<h2>Building Out Your App</h2>
+
+<p>Building out your app using a Hive Template is very easy as we have built the base structure for you. This means that all you
+have to do is customize by adding in more pages and/or styling to the base that we provided. We have already integrated Bootstrap,
+Javascript, jQuery, Firebase, AngularFire, and Angular UI-Router for you, and you can add in any other platforms, plugins, etc. that you
+need.</p>
