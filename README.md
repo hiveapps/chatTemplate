@@ -251,3 +251,35 @@ database, we believe that this will prove to be a great starting point for you t
 have to do is customize by adding in more pages and/or styling to the base that we provided. We have already integrated Bootstrap,
 Javascript, jQuery, Firebase, AngularFire, and Angular UI-Router for you, and you can add in any other platforms, plugins, etc. that you
 need.</p>
+
+<br><br>
+
+<h2>Other Documents In The Structure</h2>
+
+<ul>
+	<li>There are four other documents in the root structure that are included in all Hive Templates, these files include:</li>
+	<ul>
+		<li>.editorconfig</li>
+			<ul>
+				<li>EditorConfig helps developers define and maintain consistent coding styles between different editors and IDEs. The EditorConfig project consists of a file format for defining coding styles and a collection of text editor plugins that enable editors to read the file format and adhere to defined styles. EditorConfig files are easily readable and they work nicely with version control systems. To learn more about EditorConfig <a href="http://editorconfig.org/" target="_blank">click here</a></li>
+			</ul>
+		
+		<li>.gitignore</li>
+			<ul>
+				<li>The GitIgnore page allows us to keep files and/or folders from getting pushed to Github. For instance with all Hive
+				templates we ignore the node_modules folder, this is to keep the git repository from getting too large as PhoneGap only
+				allows us to build repositories of 50MB or less.</li>
+			</ul>
+			
+		<li>config.xml</li>
+			<ul>
+				<li>This is the same config.xml file that is found within the 'www' folder structure. This file must be kept in 
+				order for PhoneGap to recognize that a config.xml file is present.</li>
+			</ul>
+		
+		<li>README.md</li>
+			<ul>
+				<li>The README.md file is what you are reading right now! :)</li>
+			</ul>
+	</ul>
+</ul>
