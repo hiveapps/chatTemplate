@@ -1,4 +1,4 @@
-var hive = angular.module('hive', ['ui.router', 'hive.controllers', 'hive.services', 'hive.directives', 'firebase']);
+var hive = angular.module('hive', ['ui.router', 'hive.controllers', 'hive.services', 'hive.directives', 'firebase', 'hive.variables']);
 
 hive.config(function($stateProvider, $urlRouterProvider) {
       
