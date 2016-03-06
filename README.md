@@ -220,7 +220,7 @@ database, we believe that this will prove to be a great starting point for you t
 									<li>chat.html</li>
 										<ul>
 											<li>The chat.html file is where we have setup all the html for the 'chat' page, this page integrates
-											AngularJS to display each new message and utilizes to the chatCtrl.</li>
+											AngularJS to display each new message and utilizes the chatCtrl.</li>
 										</ul>
 									
 									<li>header.html</li>
