@@ -1,7 +1,7 @@
 <h1><b>Hive Chat Template</b></h1>
 
 <p>The Hive Chat Template is built to provide a very basic chat service that integrates firebase login and a messaging service 
-with a custom factory and controllers.</p>
+with custom controllers and templates.</p>
 
 <ul>
 	<li>Click on any of the below links to navigate to the selected section:</li>
@@ -73,7 +73,7 @@ The file structure goes as follows:</p>
 					<li>angular-ui-router.min.js</li>
 					<li>angular.min.js</li>
 					<li>app.js</li>
-					<li>controller.js</li>
+					<li>controllers.js</li>
 					<li>directives.js</li>
 					<li>services.js</li>
 				</ul>
